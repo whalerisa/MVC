@@ -4,7 +4,7 @@ class CowController:
     def __init__(self, model):
         self.model = model
 
-    def handle_cow_id(self, cow_id): #ค้นหาวัวตาม ID และส่งต่อผลไปที่ View
+    def Find_cow_id(self, cow_id): #ค้นหาวัวตาม ID และส่งต่อผลไปที่ View
         cow = self.model.get_cow(cow_id)
         return cow if cow else None
 
